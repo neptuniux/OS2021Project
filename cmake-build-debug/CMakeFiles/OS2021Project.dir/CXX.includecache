@@ -6,25 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/daniel/CLionProjects/OS2021Project/main.cpp
-map
--
-iostream
--
-cassert
--
-vector
--
-main.h
-/home/daniel/CLionProjects/OS2021Project/main.h
-pthread.h
--
-testFamily.h
-/home/daniel/CLionProjects/OS2021Project/testFamily.h
-operations.h
-/home/daniel/CLionProjects/OS2021Project/operations.h
-
-/home/daniel/CLionProjects/OS2021Project/main.h
+C:/Users/Daniel/CLionProjects/OS2021Project/main.h
 string
 -
 time.h
@@ -32,17 +14,11 @@ time.h
 vector
 -
 
-/home/daniel/CLionProjects/OS2021Project/operations.cpp
+C:/Users/Daniel/CLionProjects/OS2021Project/operations.cpp
 map
 -
 main.h
-/home/daniel/CLionProjects/OS2021Project/main.h
+C:/Users/Daniel/CLionProjects/OS2021Project/main.h
 pthread.h
 -
-
-/home/daniel/CLionProjects/OS2021Project/operations.h
-
-/home/daniel/CLionProjects/OS2021Project/testFamily.h
-main.h
-/home/daniel/CLionProjects/OS2021Project/main.h
 

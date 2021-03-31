@@ -9,6 +9,7 @@
 #include "randomString.h"
 #include <ctime>
 #include "testFamily.h"
+#include "testCloths.h"
 
 cloth * createTestCloths(int clothsSize, member *family[]){
     cloth wardRobe[clothsSize];
@@ -40,10 +41,12 @@ cloth * createTestCloths(int clothsSize, member *family[]){
     return wardRobe;
 }
 
-cloth * createTestCloths(int clothsSize, int familySize) {
-    member *family;
-    family = createTestFamily(familySize);
-    return createTestCloths(clothsSize,family);
+cloth * createTestCloths(member *family,int clothsSize) {
+
+    family = createTestFamily(family);
+    cloth *toReturn;
+    toReturn = createTestCloths(clothsSize,&family);
+    return toReturn;
 
 }
 
@@ -73,5 +76,6 @@ cloth * createTestBag(int clothsSize, int memberId) {
         randomValue.ownerID = memberId;
         bag[i]= static_cast<cloth &&>(randomValue);
     }
+    return bag;
 
 }

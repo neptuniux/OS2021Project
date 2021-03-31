@@ -10,7 +10,7 @@ void *addToWardrobe(void *threadIdFamily){
     struct thread_data *threadData;
     threadData = (struct thread_data *) threadIdFamily;
 
-    printf("Add to family thread id=%d, family members=%d",threadData->thread_id,threadData->family[0]->id);
+    printf("Add to family thread id=%d, family members=%s \n",threadData->thread_id,threadData->family[0].firstname.c_str());
     pthread_exit(NULL);
 }
 

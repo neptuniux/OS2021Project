@@ -6,10 +6,11 @@
 #define OS2021PROJECT_TESTFAMILY_H
 #include "main.h"
 
-member *createTestFamily(int size);
-class testFamily {
+member *createTestFamily(member *family);
 
+class TestFamily {
+public:
+    member *family;
+    TestFamily(member *family);
 };
-
-
 #endif //OS2021PROJECT_TESTFAMILY_H

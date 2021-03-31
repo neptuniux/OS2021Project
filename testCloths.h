@@ -7,7 +7,7 @@
 #include "main.h"
 
 cloth * createTestBag(int clothsSize, int memberId);
-cloth * createTestCloths(int clothsSize, member *family);
+cloth * createTestCloths(int clothsSize, member *family[]);
 class testCloths {
 
 };

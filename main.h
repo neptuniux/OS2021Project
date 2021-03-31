@@ -26,7 +26,7 @@ struct member{
 
 struct thread_data{
     int thread_id;
-    member *family[];
+    member *family;
 };
 
 #endif //OS2021PROJECT_MAIN_H
