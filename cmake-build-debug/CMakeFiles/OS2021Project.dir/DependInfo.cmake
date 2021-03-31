@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Daniel/CLionProjects/OS2021Project/main.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/main.cpp.obj"
-  "C:/Users/Daniel/CLionProjects/OS2021Project/operations.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/operations.cpp.obj"
-  "C:/Users/Daniel/CLionProjects/OS2021Project/randomString.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/randomString.cpp.obj"
-  "C:/Users/Daniel/CLionProjects/OS2021Project/testCloths.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/testCloths.cpp.obj"
-  "C:/Users/Daniel/CLionProjects/OS2021Project/testFamily.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/testFamily.cpp.obj"
+  "/home/daniel/CLionProjects/OS2021Project/main.cpp" "/home/daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/main.cpp.o"
+  "/home/daniel/CLionProjects/OS2021Project/operations.cpp" "/home/daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/operations.cpp.o"
+  "/home/daniel/CLionProjects/OS2021Project/randomString.cpp" "/home/daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/randomString.cpp.o"
+  "/home/daniel/CLionProjects/OS2021Project/testCloths.cpp" "/home/daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/testCloths.cpp.o"
+  "/home/daniel/CLionProjects/OS2021Project/testFamily.cpp" "/home/daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/testFamily.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

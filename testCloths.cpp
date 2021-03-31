@@ -34,7 +34,7 @@ cloth * createTestCloths(int clothsSize, member *family[]){
 
         randomValue.created = time(0);
         randomValue.lastUsed = 0;
-        randomValue.ownerID = family[i % 10].id;
+        randomValue.ownerID = family[i % 10]->id;
         wardRobe[i]=randomValue;
     }
     return wardRobe;

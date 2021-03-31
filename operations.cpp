@@ -3,14 +3,8 @@
 //
 
 #include <map>
-#include "operations.h"
 #include "main.h"
 #include <pthread.h>
-#include <iostream>
-#include <cstdlib>
-
-
-
 
 void *addToWardrobe(void *threadIdFamily){
     struct thread_data *threadData;

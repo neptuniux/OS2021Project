@@ -1,13 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/OS2021Project.dir/main.cpp.obj"
-  "CMakeFiles/OS2021Project.dir/operations.cpp.obj"
-  "CMakeFiles/OS2021Project.dir/randomString.cpp.obj"
-  "CMakeFiles/OS2021Project.dir/testCloths.cpp.obj"
-  "CMakeFiles/OS2021Project.dir/testFamily.cpp.obj"
-  "OS2021Project.exe"
-  "OS2021Project.exe.manifest"
+  "CMakeFiles/OS2021Project.dir/main.cpp.o"
+  "CMakeFiles/OS2021Project.dir/operations.cpp.o"
+  "CMakeFiles/OS2021Project.dir/randomString.cpp.o"
+  "CMakeFiles/OS2021Project.dir/testCloths.cpp.o"
+  "CMakeFiles/OS2021Project.dir/testFamily.cpp.o"
+  "OS2021Project"
   "OS2021Project.pdb"
-  "libOS2021Project.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
