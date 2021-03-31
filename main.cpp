@@ -3,17 +3,23 @@
 #include <cassert>
 #include <vector>
 #include "main.h"
+#include <pthread.h>
+#include "testFamily.h"
 
 int main(int argc, char **argv){
-    int keyTolook;
-    std::map<int , cloth> m;
+    pthread_t opperations[5];
+    struct thread_data td[5];
+    member familyx[100];
+    familyx = createTestFamily(100);
 
 
+    for (int i=0;i<5;i++){
+        td[i].thread_id = i;
+        printf("creating operations id= %d",i);
 
-    std::cout << m[keyTolook].name << '\n';
-    auto i = m.find(keyTolook);
-    assert(i != m.end());
-    std::cout << "Key: " << i->first << " Value: " << i->second.name << '\n';
+    }
+
+
     return 0;
 }
 

@@ -20,4 +20,9 @@ struct member{
     std::vector<cloth> bag;
 };
 
+struct thread_data{
+    int thread_id;
+    member *family[];
+};
+
 #endif //OS2021PROJECT_MAIN_H

@@ -6,7 +6,7 @@
 #define OS2021PROJECT_TESTFAMILY_H
 #include "main.h"
 
-member * createTestFamily(int size);
+member *createTestFamily(int size);
 class testFamily {
 
 };
