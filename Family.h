@@ -15,5 +15,6 @@ public:
     int id;
     std::array<Member,100> family;
     Family();
+    void goShopping(int numberItems);
 };
 #endif //OS2021PROJECT_FAMILY_H

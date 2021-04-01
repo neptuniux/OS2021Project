@@ -25,7 +25,7 @@ int main(int argc, char **argv){
 
     //create a wardrobe test
     WardRobe objWardrobe;
-
+    testFamily.goShopping(10);
     objWardrobe.addToWardrobe(testFamily);
 
 /*

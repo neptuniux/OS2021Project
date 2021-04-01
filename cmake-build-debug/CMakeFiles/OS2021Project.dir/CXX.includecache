@@ -6,9 +6,23 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Daniel/CLionProjects/OS2021Project/Cloth.cpp
+Cloth.h
+C:/Users/Daniel/CLionProjects/OS2021Project/Cloth.h
+ctime
+-
+randomString.h
+C:/Users/Daniel/CLionProjects/OS2021Project/randomString.h
+
 C:/Users/Daniel/CLionProjects/OS2021Project/Cloth.h
 string
 -
+
+C:/Users/Daniel/CLionProjects/OS2021Project/Family.cpp
+Family.h
+C:/Users/Daniel/CLionProjects/OS2021Project/Family.h
+main.h
+C:/Users/Daniel/CLionProjects/OS2021Project/main.h
 
 C:/Users/Daniel/CLionProjects/OS2021Project/Family.h
 main.h
@@ -17,6 +31,12 @@ Member.h
 C:/Users/Daniel/CLionProjects/OS2021Project/Member.h
 array
 -
+
+C:/Users/Daniel/CLionProjects/OS2021Project/Member.cpp
+Member.h
+C:/Users/Daniel/CLionProjects/OS2021Project/Member.h
+randomString.h
+C:/Users/Daniel/CLionProjects/OS2021Project/randomString.h
 
 C:/Users/Daniel/CLionProjects/OS2021Project/Member.h
 string
@@ -44,6 +64,26 @@ pthread.h
 Family.h
 C:/Users/Daniel/CLionProjects/OS2021Project/Family.h
 
+C:/Users/Daniel/CLionProjects/OS2021Project/main.cpp
+map
+-
+iostream
+-
+cassert
+-
+vector
+-
+main.h
+C:/Users/Daniel/CLionProjects/OS2021Project/main.h
+pthread.h
+-
+Family.h
+C:/Users/Daniel/CLionProjects/OS2021Project/Family.h
+WardRobe.h
+C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.h
+Member.h
+C:/Users/Daniel/CLionProjects/OS2021Project/Member.h
+
 C:/Users/Daniel/CLionProjects/OS2021Project/main.h
 string
 -
@@ -51,6 +91,24 @@ time.h
 -
 vector
 -
+
+C:/Users/Daniel/CLionProjects/OS2021Project/randomString.h
+
+C:/Users/Daniel/CLionProjects/OS2021Project/testCloths.cpp
+cstdlib
+-
+vector
+-
+testCloths.h
+C:/Users/Daniel/CLionProjects/OS2021Project/testCloths.h
+main.h
+C:/Users/Daniel/CLionProjects/OS2021Project/main.h
+randomString.h
+C:/Users/Daniel/CLionProjects/OS2021Project/randomString.h
+ctime
+-
+Family.h
+C:/Users/Daniel/CLionProjects/OS2021Project/Family.h
 
 C:/Users/Daniel/CLionProjects/OS2021Project/testCloths.h
 main.h

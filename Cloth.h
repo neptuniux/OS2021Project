@@ -16,6 +16,8 @@ public:
 
     Cloth(const std::string &name, int ownerId);
 
+    Cloth(int ownerId);
+
 };
 
 

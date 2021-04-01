@@ -3,13 +3,13 @@
 
 CMakeFiles/OS2021Project.dir/Cloth.cpp.obj: ../Cloth.cpp
 CMakeFiles/OS2021Project.dir/Cloth.cpp.obj: ../Cloth.h
+CMakeFiles/OS2021Project.dir/Cloth.cpp.obj: ../randomString.h
 
 CMakeFiles/OS2021Project.dir/Family.cpp.obj: ../Cloth.h
 CMakeFiles/OS2021Project.dir/Family.cpp.obj: ../Family.cpp
 CMakeFiles/OS2021Project.dir/Family.cpp.obj: ../Family.h
 CMakeFiles/OS2021Project.dir/Family.cpp.obj: ../Member.h
 CMakeFiles/OS2021Project.dir/Family.cpp.obj: ../main.h
-CMakeFiles/OS2021Project.dir/Family.cpp.obj: ../randomString.h
 
 CMakeFiles/OS2021Project.dir/Member.cpp.obj: ../Cloth.h
 CMakeFiles/OS2021Project.dir/Member.cpp.obj: ../Member.cpp

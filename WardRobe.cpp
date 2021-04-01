@@ -9,7 +9,6 @@
 int id;
 std::map<int , Cloth> locWardrobe;
 
-//WardRobe::WardRobe(const std::map<int, cloth> &wardrobe) : wardrobe(wardrobe),id(rand()%1000) {}
 
 WardRobe::WardRobe() : wardrobe(locWardrobe),id(rand()%1000) {}
 
