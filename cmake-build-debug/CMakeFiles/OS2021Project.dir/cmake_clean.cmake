@@ -5,7 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj"
   "CMakeFiles/OS2021Project.dir/main.cpp.obj"
   "CMakeFiles/OS2021Project.dir/randomString.cpp.obj"
-  "CMakeFiles/OS2021Project.dir/testCloths.cpp.obj"
   "OS2021Project.exe"
   "OS2021Project.exe.manifest"
   "OS2021Project.pdb"

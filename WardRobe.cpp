@@ -3,10 +3,12 @@
 //
 
 #include "WardRobe.h"
-#include "Family.h"
 #include <pthread.h>
+#include <algorithm>
 
-
+struct {
+    bool operator()(Member a, Member b) const { return a.getBag().size() < b.getBag().size(); }
+} smallestBagSize;
 
 WardRobe::WardRobe() : wardrobe(), id(rand() % 1000) {}
 
@@ -18,15 +20,16 @@ int WardRobe::addFamBagsToWardrobe(Family family){
     struct thread_data td[numberOfThreads];
     int rc;
 
-    //TODO sort the family, smallest bag comes first.
-
+    //this sort locally the family with the smallest bag first
+    std::sort(family.family.begin(),family.family.end(),smallestBagSize);
 
     for (int i=0;i<numberOfThreads;i++){
         td[i].thread_id = i;
         td[i].member = &family.family[i];
+        td[i].currentWardrobe = this;
         printf("Member with id %d open the wardrobe: step %d / %d\n",td[i].member->getId(),i,numberOfThreads);
         rc=pthread_create(&operations[i],NULL,putBagItoWardrobe,(void *) &td[i]);
-
+        pthread_join(operations[i-1],NULL);
         if (rc) {
             printf("Error:unable to create thread, %d",rc);
             exit(-1);
@@ -42,18 +45,17 @@ void *putBagItoWardrobe(void *threadarg) {
     std::vector<Cloth> currentBag = threadData->member->getBag();
 
     for (int i = 0; i < bagSize; ++i) {
-        printf("the member id: %d is putting the cloth id %d into the wardrobe \n",threadData->member->getId(),currentBag.at(i).id);
-        //TODO solve this problem
-        // addClothToWardrobe(currentBag[i]);
-
+        //printf("the member id: %d is putting the cloth id %d into the wardrobe \n",threadData->member->getId(),currentBag.at(i).id);
+        threadData->currentWardrobe->addClothToWardrobe(currentBag[i]);
     }
+    printf("the member id: %d close the wardrobe \n",threadData->member->getId());
     pthread_exit(NULL);
 }
 
 
 int WardRobe::addClothToWardrobe(Cloth cloth){
-    wardrobe.insert(std::pair<int,Cloth>(wardrobe.size(),cloth));
-    return -1;
+    wardrobe.push_back(cloth);
+    return 0;
 }
 
 int WardRobe::cleanWardrobe(){
@@ -64,7 +66,7 @@ int WardRobe::getId() const {
     return id;
 }
 
-const std::map<int, Cloth> &WardRobe::getWardrobe() const {
+const std::vector<Cloth> &WardRobe::getWardrobe() const {
     return wardrobe;
 }
 

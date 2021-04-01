@@ -10,7 +10,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj"
   "C:/Users/Daniel/CLionProjects/OS2021Project/main.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/main.cpp.obj"
   "C:/Users/Daniel/CLionProjects/OS2021Project/randomString.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/randomString.cpp.obj"
-  "C:/Users/Daniel/CLionProjects/OS2021Project/testCloths.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/testCloths.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

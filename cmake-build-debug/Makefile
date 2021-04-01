@@ -304,33 +304,6 @@ randomString.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/randomString.cpp.s
 .PHONY : randomString.cpp.s
 
-testCloths.obj: testCloths.cpp.obj
-
-.PHONY : testCloths.obj
-
-# target to build an object file
-testCloths.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/testCloths.cpp.obj
-.PHONY : testCloths.cpp.obj
-
-testCloths.i: testCloths.cpp.i
-
-.PHONY : testCloths.i
-
-# target to preprocess a source file
-testCloths.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/testCloths.cpp.i
-.PHONY : testCloths.cpp.i
-
-testCloths.s: testCloths.cpp.s
-
-.PHONY : testCloths.s
-
-# target to generate assembly for a file
-testCloths.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/testCloths.cpp.s
-.PHONY : testCloths.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -358,9 +331,6 @@ help:
 	@echo ... randomString.obj
 	@echo ... randomString.i
 	@echo ... randomString.s
-	@echo ... testCloths.obj
-	@echo ... testCloths.i
-	@echo ... testCloths.s
 .PHONY : help
 
 

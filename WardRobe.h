@@ -10,9 +10,10 @@
 #define OS2021PROJECT_WARDROBE_H
 
 void *putBagItoWardrobe(void *threadarg);
+
 class WardRobe {
     int id;
-    std::map<int , Cloth> wardrobe;
+    std::vector<Cloth> wardrobe;
 
     public:
     //WardRobe(const std::map<int, cloth> &wardrobe);
@@ -21,13 +22,15 @@ class WardRobe {
     //int addFamBagsToWardrobe(member family[]);
     int cleanWardrobe();
     int getId() const;
-    const std::map<int, Cloth> &getWardrobe() const;
+    const std::vector<Cloth> &getWardrobe() const;
     int addClothToWardrobe(Cloth cloth);
+
 };
 
 struct thread_data{
     int thread_id;
     Member *member;
+    WardRobe *currentWardrobe;
 };
 
 

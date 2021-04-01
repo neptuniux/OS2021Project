@@ -116,12 +116,6 @@
 		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/randomString.h">
 			<Option target="OS2021Project"/>
 		</Unit>
-		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/testCloths.cpp">
-			<Option target="OS2021Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/testCloths.h">
-			<Option target="OS2021Project"/>
-		</Unit>
 		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -22,7 +22,6 @@ CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj: ../Member.h
 CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj: ../WardRobe.cpp
 CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj: ../WardRobe.h
 CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj: ../main.h
-CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj: ../testCloths.h
 
 CMakeFiles/OS2021Project.dir/main.cpp.obj: ../Cloth.h
 CMakeFiles/OS2021Project.dir/main.cpp.obj: ../Family.h
@@ -33,12 +32,4 @@ CMakeFiles/OS2021Project.dir/main.cpp.obj: ../main.h
 
 CMakeFiles/OS2021Project.dir/randomString.cpp.obj: ../randomString.cpp
 CMakeFiles/OS2021Project.dir/randomString.cpp.obj: ../randomString.h
-
-CMakeFiles/OS2021Project.dir/testCloths.cpp.obj: ../Cloth.h
-CMakeFiles/OS2021Project.dir/testCloths.cpp.obj: ../Family.h
-CMakeFiles/OS2021Project.dir/testCloths.cpp.obj: ../Member.h
-CMakeFiles/OS2021Project.dir/testCloths.cpp.obj: ../main.h
-CMakeFiles/OS2021Project.dir/testCloths.cpp.obj: ../randomString.h
-CMakeFiles/OS2021Project.dir/testCloths.cpp.obj: ../testCloths.cpp
-CMakeFiles/OS2021Project.dir/testCloths.cpp.obj: ../testCloths.h
 

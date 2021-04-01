@@ -29,11 +29,9 @@ C:/Users/Daniel/CLionProjects/OS2021Project/Cloth.h
 C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.cpp
 WardRobe.h
 C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.h
-testCloths.h
-C:/Users/Daniel/CLionProjects/OS2021Project/testCloths.h
-Family.h
-C:/Users/Daniel/CLionProjects/OS2021Project/Family.h
 pthread.h
+-
+algorithm
 -
 
 C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.h
@@ -53,8 +51,4 @@ time.h
 -
 vector
 -
-
-C:/Users/Daniel/CLionProjects/OS2021Project/testCloths.h
-main.h
-C:/Users/Daniel/CLionProjects/OS2021Project/main.h
 

@@ -115,22 +115,9 @@ CMakeFiles/OS2021Project.dir/randomString.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OS2021Project.dir/randomString.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Daniel\CLionProjects\OS2021Project\randomString.cpp -o CMakeFiles\OS2021Project.dir\randomString.cpp.s
 
-CMakeFiles/OS2021Project.dir/testCloths.cpp.obj: CMakeFiles/OS2021Project.dir/flags.make
-CMakeFiles/OS2021Project.dir/testCloths.cpp.obj: ../testCloths.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Daniel\CLionProjects\OS2021Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OS2021Project.dir/testCloths.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\OS2021Project.dir\testCloths.cpp.obj -c C:\Users\Daniel\CLionProjects\OS2021Project\testCloths.cpp
-
-CMakeFiles/OS2021Project.dir/testCloths.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OS2021Project.dir/testCloths.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Daniel\CLionProjects\OS2021Project\testCloths.cpp > CMakeFiles\OS2021Project.dir\testCloths.cpp.i
-
-CMakeFiles/OS2021Project.dir/testCloths.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OS2021Project.dir/testCloths.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Daniel\CLionProjects\OS2021Project\testCloths.cpp -o CMakeFiles\OS2021Project.dir\testCloths.cpp.s
-
 CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj: CMakeFiles/OS2021Project.dir/flags.make
 CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj: ../WardRobe.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Daniel\CLionProjects\OS2021Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Daniel\CLionProjects\OS2021Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\OS2021Project.dir\WardRobe.cpp.obj -c C:\Users\Daniel\CLionProjects\OS2021Project\WardRobe.cpp
 
 CMakeFiles/OS2021Project.dir/WardRobe.cpp.i: cmake_force
@@ -143,7 +130,7 @@ CMakeFiles/OS2021Project.dir/WardRobe.cpp.s: cmake_force
 
 CMakeFiles/OS2021Project.dir/Cloth.cpp.obj: CMakeFiles/OS2021Project.dir/flags.make
 CMakeFiles/OS2021Project.dir/Cloth.cpp.obj: ../Cloth.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Daniel\CLionProjects\OS2021Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OS2021Project.dir/Cloth.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Daniel\CLionProjects\OS2021Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OS2021Project.dir/Cloth.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\OS2021Project.dir\Cloth.cpp.obj -c C:\Users\Daniel\CLionProjects\OS2021Project\Cloth.cpp
 
 CMakeFiles/OS2021Project.dir/Cloth.cpp.i: cmake_force
@@ -156,7 +143,7 @@ CMakeFiles/OS2021Project.dir/Cloth.cpp.s: cmake_force
 
 CMakeFiles/OS2021Project.dir/Member.cpp.obj: CMakeFiles/OS2021Project.dir/flags.make
 CMakeFiles/OS2021Project.dir/Member.cpp.obj: ../Member.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Daniel\CLionProjects\OS2021Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OS2021Project.dir/Member.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Daniel\CLionProjects\OS2021Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OS2021Project.dir/Member.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\OS2021Project.dir\Member.cpp.obj -c C:\Users\Daniel\CLionProjects\OS2021Project\Member.cpp
 
 CMakeFiles/OS2021Project.dir/Member.cpp.i: cmake_force
@@ -172,7 +159,6 @@ OS2021Project_OBJECTS = \
 "CMakeFiles/OS2021Project.dir/main.cpp.obj" \
 "CMakeFiles/OS2021Project.dir/Family.cpp.obj" \
 "CMakeFiles/OS2021Project.dir/randomString.cpp.obj" \
-"CMakeFiles/OS2021Project.dir/testCloths.cpp.obj" \
 "CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj" \
 "CMakeFiles/OS2021Project.dir/Cloth.cpp.obj" \
 "CMakeFiles/OS2021Project.dir/Member.cpp.obj"
@@ -183,7 +169,6 @@ OS2021Project_EXTERNAL_OBJECTS =
 OS2021Project.exe: CMakeFiles/OS2021Project.dir/main.cpp.obj
 OS2021Project.exe: CMakeFiles/OS2021Project.dir/Family.cpp.obj
 OS2021Project.exe: CMakeFiles/OS2021Project.dir/randomString.cpp.obj
-OS2021Project.exe: CMakeFiles/OS2021Project.dir/testCloths.cpp.obj
 OS2021Project.exe: CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj
 OS2021Project.exe: CMakeFiles/OS2021Project.dir/Cloth.cpp.obj
 OS2021Project.exe: CMakeFiles/OS2021Project.dir/Member.cpp.obj
@@ -191,7 +176,7 @@ OS2021Project.exe: CMakeFiles/OS2021Project.dir/build.make
 OS2021Project.exe: CMakeFiles/OS2021Project.dir/linklibs.rsp
 OS2021Project.exe: CMakeFiles/OS2021Project.dir/objects1.rsp
 OS2021Project.exe: CMakeFiles/OS2021Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Daniel\CLionProjects\OS2021Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable OS2021Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Daniel\CLionProjects\OS2021Project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable OS2021Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OS2021Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
