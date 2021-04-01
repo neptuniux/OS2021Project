@@ -80,16 +80,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/Cloth.cpp">
+			<Option target="OS2021Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/Cloth.h">
+			<Option target="OS2021Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/Family.cpp">
+			<Option target="OS2021Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/Family.h">
+			<Option target="OS2021Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/Member.cpp">
+			<Option target="OS2021Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/Member.h">
+			<Option target="OS2021Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.cpp">
+			<Option target="OS2021Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.h">
+			<Option target="OS2021Project"/>
+		</Unit>
 		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/main.cpp">
 			<Option target="OS2021Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/main.h">
-			<Option target="OS2021Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/operations.cpp">
-			<Option target="OS2021Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/operations.h">
 			<Option target="OS2021Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/randomString.cpp">
@@ -102,12 +120,6 @@
 			<Option target="OS2021Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/testCloths.h">
-			<Option target="OS2021Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/testFamily.cpp">
-			<Option target="OS2021Project"/>
-		</Unit>
-		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/testFamily.h">
 			<Option target="OS2021Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Daniel/CLionProjects/OS2021Project/CMakeLists.txt">

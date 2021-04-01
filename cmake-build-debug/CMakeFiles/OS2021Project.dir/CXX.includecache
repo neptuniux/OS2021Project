@@ -6,6 +6,44 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Daniel/CLionProjects/OS2021Project/Cloth.h
+string
+-
+
+C:/Users/Daniel/CLionProjects/OS2021Project/Family.h
+main.h
+C:/Users/Daniel/CLionProjects/OS2021Project/main.h
+Member.h
+C:/Users/Daniel/CLionProjects/OS2021Project/Member.h
+array
+-
+
+C:/Users/Daniel/CLionProjects/OS2021Project/Member.h
+string
+-
+vector
+-
+Cloth.h
+C:/Users/Daniel/CLionProjects/OS2021Project/Cloth.h
+
+C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.cpp
+WardRobe.h
+C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.h
+testCloths.h
+C:/Users/Daniel/CLionProjects/OS2021Project/testCloths.h
+Family.h
+C:/Users/Daniel/CLionProjects/OS2021Project/Family.h
+
+C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.h
+map
+-
+main.h
+C:/Users/Daniel/CLionProjects/OS2021Project/main.h
+pthread.h
+-
+Family.h
+C:/Users/Daniel/CLionProjects/OS2021Project/Family.h
+
 C:/Users/Daniel/CLionProjects/OS2021Project/main.h
 string
 -
@@ -14,11 +52,7 @@ time.h
 vector
 -
 
-C:/Users/Daniel/CLionProjects/OS2021Project/operations.cpp
-map
--
+C:/Users/Daniel/CLionProjects/OS2021Project/testCloths.h
 main.h
 C:/Users/Daniel/CLionProjects/OS2021Project/main.h
-pthread.h
--
 

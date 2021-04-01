@@ -8,7 +8,7 @@
 
 #ifndef OS2021PROJECT_MAIN_H
 #define OS2021PROJECT_MAIN_H
-
+/*
 struct cloth{
     std::string name;
     int id;
@@ -17,7 +17,7 @@ struct cloth{
     time_t lastUsed;
 };
 
-struct member{
+struct Member{
     int id;
     std::string firstname;
     std::string lastname;
@@ -26,7 +26,7 @@ struct member{
 
 struct thread_data{
     int thread_id;
-    member *family;
+    Member *family;
 };
-
+*/
 #endif //OS2021PROJECT_MAIN_H

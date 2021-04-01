@@ -1,15 +1,15 @@
 //
 // Created by Daniel on 17/03/2021.
 //
-
+/*
 #include <cstdlib>
 #include <vector>
 #include "testCloths.h"
 #include "main.h"
 #include "randomString.h"
 #include <ctime>
-#include "testFamily.h"
-#include "testCloths.h"
+#include "Family.h"
+
 
 cloth * createTestCloths(int clothsSize, member *family[]){
     cloth wardRobe[clothsSize];
@@ -42,8 +42,8 @@ cloth * createTestCloths(int clothsSize, member *family[]){
 }
 
 cloth * createTestCloths(member *family,int clothsSize) {
-
-    family = createTestFamily(family);
+    //TODO watchout withe the sizeof
+    family = generateTestFamily(family,sizeof family);
     cloth *toReturn;
     toReturn = createTestCloths(clothsSize,&family);
     return toReturn;
@@ -79,3 +79,7 @@ cloth * createTestBag(int clothsSize, int memberId) {
     return bag;
 
 }
+
+testCloths::testCloths(cloth *cloths) : cloths(cloths) {}
+testCloths::testCloths() : cloths(cloths) {}
+*/

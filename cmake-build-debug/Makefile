@@ -142,6 +142,114 @@ OS2021Project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/build
 .PHONY : OS2021Project/fast
 
+Cloth.obj: Cloth.cpp.obj
+
+.PHONY : Cloth.obj
+
+# target to build an object file
+Cloth.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/Cloth.cpp.obj
+.PHONY : Cloth.cpp.obj
+
+Cloth.i: Cloth.cpp.i
+
+.PHONY : Cloth.i
+
+# target to preprocess a source file
+Cloth.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/Cloth.cpp.i
+.PHONY : Cloth.cpp.i
+
+Cloth.s: Cloth.cpp.s
+
+.PHONY : Cloth.s
+
+# target to generate assembly for a file
+Cloth.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/Cloth.cpp.s
+.PHONY : Cloth.cpp.s
+
+Family.obj: Family.cpp.obj
+
+.PHONY : Family.obj
+
+# target to build an object file
+Family.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/Family.cpp.obj
+.PHONY : Family.cpp.obj
+
+Family.i: Family.cpp.i
+
+.PHONY : Family.i
+
+# target to preprocess a source file
+Family.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/Family.cpp.i
+.PHONY : Family.cpp.i
+
+Family.s: Family.cpp.s
+
+.PHONY : Family.s
+
+# target to generate assembly for a file
+Family.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/Family.cpp.s
+.PHONY : Family.cpp.s
+
+Member.obj: Member.cpp.obj
+
+.PHONY : Member.obj
+
+# target to build an object file
+Member.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/Member.cpp.obj
+.PHONY : Member.cpp.obj
+
+Member.i: Member.cpp.i
+
+.PHONY : Member.i
+
+# target to preprocess a source file
+Member.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/Member.cpp.i
+.PHONY : Member.cpp.i
+
+Member.s: Member.cpp.s
+
+.PHONY : Member.s
+
+# target to generate assembly for a file
+Member.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/Member.cpp.s
+.PHONY : Member.cpp.s
+
+WardRobe.obj: WardRobe.cpp.obj
+
+.PHONY : WardRobe.obj
+
+# target to build an object file
+WardRobe.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj
+.PHONY : WardRobe.cpp.obj
+
+WardRobe.i: WardRobe.cpp.i
+
+.PHONY : WardRobe.i
+
+# target to preprocess a source file
+WardRobe.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/WardRobe.cpp.i
+.PHONY : WardRobe.cpp.i
+
+WardRobe.s: WardRobe.cpp.s
+
+.PHONY : WardRobe.s
+
+# target to generate assembly for a file
+WardRobe.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/WardRobe.cpp.s
+.PHONY : WardRobe.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -168,33 +276,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-operations.obj: operations.cpp.obj
-
-.PHONY : operations.obj
-
-# target to build an object file
-operations.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/operations.cpp.obj
-.PHONY : operations.cpp.obj
-
-operations.i: operations.cpp.i
-
-.PHONY : operations.i
-
-# target to preprocess a source file
-operations.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/operations.cpp.i
-.PHONY : operations.cpp.i
-
-operations.s: operations.cpp.s
-
-.PHONY : operations.s
-
-# target to generate assembly for a file
-operations.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/operations.cpp.s
-.PHONY : operations.cpp.s
 
 randomString.obj: randomString.cpp.obj
 
@@ -250,33 +331,6 @@ testCloths.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/testCloths.cpp.s
 .PHONY : testCloths.cpp.s
 
-testFamily.obj: testFamily.cpp.obj
-
-.PHONY : testFamily.obj
-
-# target to build an object file
-testFamily.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/testFamily.cpp.obj
-.PHONY : testFamily.cpp.obj
-
-testFamily.i: testFamily.cpp.i
-
-.PHONY : testFamily.i
-
-# target to preprocess a source file
-testFamily.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/testFamily.cpp.i
-.PHONY : testFamily.cpp.i
-
-testFamily.s: testFamily.cpp.s
-
-.PHONY : testFamily.s
-
-# target to generate assembly for a file
-testFamily.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OS2021Project.dir\build.make CMakeFiles/OS2021Project.dir/testFamily.cpp.s
-.PHONY : testFamily.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -286,21 +340,27 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... OS2021Project
+	@echo ... Cloth.obj
+	@echo ... Cloth.i
+	@echo ... Cloth.s
+	@echo ... Family.obj
+	@echo ... Family.i
+	@echo ... Family.s
+	@echo ... Member.obj
+	@echo ... Member.i
+	@echo ... Member.s
+	@echo ... WardRobe.obj
+	@echo ... WardRobe.i
+	@echo ... WardRobe.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... operations.obj
-	@echo ... operations.i
-	@echo ... operations.s
 	@echo ... randomString.obj
 	@echo ... randomString.i
 	@echo ... randomString.s
 	@echo ... testCloths.obj
 	@echo ... testCloths.i
 	@echo ... testCloths.s
-	@echo ... testFamily.obj
-	@echo ... testFamily.i
-	@echo ... testFamily.s
 .PHONY : help
 
 
