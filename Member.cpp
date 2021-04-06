@@ -29,3 +29,6 @@ void Member::addClohToBag(Cloth cloth){
     Member::bag.push_back(cloth);
 }
 
+void  Member::cleanbag() {
+    bag.clear();
+}

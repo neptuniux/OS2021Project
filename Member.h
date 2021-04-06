@@ -23,6 +23,7 @@ public:
     const std::string &getFirstname() const;
     const std::string &getLastname() const;
     const std::vector<Cloth> &getBag() const;
+    void cleanbag();
 
 };
 

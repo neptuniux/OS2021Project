@@ -24,7 +24,6 @@ int main(int argc, char **argv){
     //create a family test
     Family testFamily;
 
-
     //create a wardrobe test
     WardRobe objWardrobe;
 
@@ -33,7 +32,7 @@ int main(int argc, char **argv){
 
     //add each other bag into the wardrobe
     objWardrobe.addFamBagsToWardrobe(testFamily);
-    printf("The object of the wardrobe at the id 1 is %d",objWardrobe.getWardrobe().front());
+    printf("The object of the wardrobe at the id 1 is %d ant the name is %s",objWardrobe.getWardrobe().front().id,objWardrobe.getWardrobe().front().name.c_str());
 
     return 0;
 }

@@ -21,8 +21,8 @@ class WardRobe {
     int addFamBagsToWardrobe(Family family);
     //int addFamBagsToWardrobe(member family[]);
     int cleanWardrobe();
-    int getId() const;
-    const std::vector<Cloth> &getWardrobe() const;
+    [[nodiscard]] int getId() const;
+    [[nodiscard]] const std::vector<Cloth> &getWardrobe() const;
     int addClothToWardrobe(Cloth cloth);
 
 };
