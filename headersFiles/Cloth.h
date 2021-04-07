@@ -14,9 +14,10 @@ public:
     time_t created;
     time_t lastUsed;
 
-    Cloth(const std::string &name, int ownerId);
+    Cloth(std::string name, int ownerId);
 
     Cloth(int ownerId);
+    void updateUseDate();
 
 };
 

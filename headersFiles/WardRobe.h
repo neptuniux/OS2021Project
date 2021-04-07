@@ -9,21 +9,23 @@
 #ifndef OS2021PROJECT_WARDROBE_H
 #define OS2021PROJECT_WARDROBE_H
 
-void *putBagItoWardrobe(void *threadarg);
+void *putBagIntoWardrobe(void *threadarg);
 
 class WardRobe {
     int id;
     std::vector<Cloth> wardrobe;
 
     public:
-    //WardRobe(const std::map<int, cloth> &wardrobe);
     WardRobe();
     int addFamBagsToWardrobe(Family family);
-    //int addFamBagsToWardrobe(member family[]);
-    int cleanWardrobe();
+    void cleanWardrobe(int toClean);
+    void cleanWardrobe();
     [[nodiscard]] int getId() const;
     [[nodiscard]] const std::vector<Cloth> &getWardrobe() const;
-    int addClothToWardrobe(Cloth cloth);
+    int addClothToWardrobe(const Cloth& cloth);
+    int useRandomCloth(const Member& member);
+    int useRandomCloth();
+    Cloth popCloth(int clothid);
 
 };
 

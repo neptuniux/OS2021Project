@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Daniel/CLionProjects/OS2021Project/Cloth.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/Cloth.cpp.obj"
-  "C:/Users/Daniel/CLionProjects/OS2021Project/Family.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/Family.cpp.obj"
-  "C:/Users/Daniel/CLionProjects/OS2021Project/Member.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/Member.cpp.obj"
-  "C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/WardRobe.cpp.obj"
   "C:/Users/Daniel/CLionProjects/OS2021Project/main.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/main.cpp.obj"
-  "C:/Users/Daniel/CLionProjects/OS2021Project/randomString.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/randomString.cpp.obj"
+  "C:/Users/Daniel/CLionProjects/OS2021Project/sourcesFiles/Cloth.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/sourcesFiles/Cloth.cpp.obj"
+  "C:/Users/Daniel/CLionProjects/OS2021Project/sourcesFiles/Family.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/sourcesFiles/Family.cpp.obj"
+  "C:/Users/Daniel/CLionProjects/OS2021Project/sourcesFiles/Member.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/sourcesFiles/Member.cpp.obj"
+  "C:/Users/Daniel/CLionProjects/OS2021Project/sourcesFiles/WardRobe.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/sourcesFiles/WardRobe.cpp.obj"
+  "C:/Users/Daniel/CLionProjects/OS2021Project/sourcesFiles/randomString.cpp" "C:/Users/Daniel/CLionProjects/OS2021Project/cmake-build-debug/CMakeFiles/OS2021Project.dir/sourcesFiles/randomString.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

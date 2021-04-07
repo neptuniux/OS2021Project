@@ -16,13 +16,13 @@ class Member {
     std::string lastname;
     std::vector<Cloth> bag;
 public:
-    Member(const std::string &firstname, const std::string &lastname);
-    Member(void);
-    void addClohToBag(Cloth cloth);
-    int getId() const;
-    const std::string &getFirstname() const;
-    const std::string &getLastname() const;
-    const std::vector<Cloth> &getBag() const;
+    Member(std::string firstname, std::string lastname);
+    Member();
+    void addClohToBag(const Cloth& cloth);
+    [[nodiscard]] int getId() const;
+    [[nodiscard]] const std::string &getFirstname() const;
+    [[nodiscard]] const std::string &getLastname() const;
+    [[nodiscard]] const std::vector<Cloth> &getBag() const;
     void cleanbag();
 
 };

@@ -6,15 +6,20 @@
 #define OS2021PROJECT_FAMILY_H
 #include "main.h"
 #include "Member.h"
-#include <array>
+//#include <array>
 
-std::array<Member, 100> generateTestFamily();
+std::vector<Member> generateTestFamily(int amount);
 
 class Family {
 public:
     int id;
-    std::array<Member,100> family;
+    std::vector<Member> family;
+
     Family();
+    Family(int amount);
     void goShopping(int numberItems);
+    void goShopping();
+    Member getRandMember();
+
 };
 #endif //OS2021PROJECT_FAMILY_H

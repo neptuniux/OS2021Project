@@ -6,49 +6,61 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Daniel/CLionProjects/OS2021Project/Cloth.h
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/Cloth.h
 string
 -
 
-C:/Users/Daniel/CLionProjects/OS2021Project/Family.h
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/Family.h
 main.h
-C:/Users/Daniel/CLionProjects/OS2021Project/main.h
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/main.h
 Member.h
-C:/Users/Daniel/CLionProjects/OS2021Project/Member.h
-array
--
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/Member.h
 
-C:/Users/Daniel/CLionProjects/OS2021Project/Member.h
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/Member.h
 string
 -
 vector
 -
 Cloth.h
-C:/Users/Daniel/CLionProjects/OS2021Project/Cloth.h
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/Cloth.h
 
-C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.cpp
-WardRobe.h
-C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.h
-pthread.h
--
-algorithm
--
-
-C:/Users/Daniel/CLionProjects/OS2021Project/WardRobe.h
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/WardRobe.h
 map
 -
 main.h
-C:/Users/Daniel/CLionProjects/OS2021Project/main.h
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/main.h
 pthread.h
 -
 Family.h
-C:/Users/Daniel/CLionProjects/OS2021Project/Family.h
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/Family.h
 
-C:/Users/Daniel/CLionProjects/OS2021Project/main.h
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/main.h
 string
 -
 time.h
 -
 vector
+-
+
+C:/Users/Daniel/CLionProjects/OS2021Project/main.cpp
+map
+-
+iostream
+-
+cassert
+-
+vector
+-
+headersFiles/main.h
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/main.h
+pthread.h
+-
+headersFiles/Family.h
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/Family.h
+headersFiles/WardRobe.h
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/WardRobe.h
+headersFiles/Member.h
+C:/Users/Daniel/CLionProjects/OS2021Project/headersFiles/Member.h
+unistd.h
 -
 
