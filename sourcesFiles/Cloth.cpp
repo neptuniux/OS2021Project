@@ -3,8 +3,7 @@
 //
 
 #include "../headersFiles/Cloth.h"
-#include <ctime>
-#include <utility>
+
 #include "../headersFiles/randomString.h"
 
 Cloth::Cloth(std::string name, int ownerId) :    name(std::move(name)),

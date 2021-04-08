@@ -3,8 +3,6 @@
 //
 
 #include "../headersFiles/Member.h"
-
-#include <utility>
 #include "../headersFiles/randomString.h"
 
 Member::Member(std::string firstname, std::string lastname) : firstname(std::move(firstname)), lastname(std::move(lastname)), id(rand()),bag() {}

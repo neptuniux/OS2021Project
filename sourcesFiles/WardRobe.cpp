@@ -3,11 +3,7 @@
 //
 
 #include "../headersFiles/WardRobe.h"
-#include <pthread.h>
-#include <algorithm>
-#include <semaphore.h>
-#include <iostream>
-#include <vector>
+
 
 //this struct is used to sort the bags with the smallest first
 struct {

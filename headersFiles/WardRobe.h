@@ -2,8 +2,15 @@
 // Created by Daniel on 01/04/2021.
 //
 #include <map>
-#include "main.h"
 #include <pthread.h>
+#include <pthread.h>
+#include <algorithm>
+#include <semaphore.h>
+#include <iostream>
+#include <vector>
+#include <ctime>
+
+#include "main.h"
 #include "Family.h"
 
 #ifndef OS2021PROJECT_WARDROBE_H

@@ -2,7 +2,6 @@
 // Created by Daniel on 17/03/2021.
 //
 
-#include <string>
 #include "../headersFiles/randomString.h"
 
 std::string printstring(int n)
@@ -13,6 +12,6 @@ std::string printstring(int n)
                               'y','z', ' '};
     std::string ran;
     for (int i=0;i<n;i++)
-        ran=ran + letters[rand() % MAX_SIZE];
+        ran+= letters[rand() % MAX_SIZE];
     return ran;
 }

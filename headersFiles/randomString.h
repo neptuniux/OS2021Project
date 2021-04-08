@@ -5,10 +5,10 @@
 #ifndef OS2021PROJECT_RANDOMSTRING_H
 #define OS2021PROJECT_RANDOMSTRING_H
 
-std::string printstring(int n);
-class randomString {
+#include <string>
 
-};
+std::string printstring(int n);
+
 
 
 #endif //OS2021PROJECT_RANDOMSTRING_H

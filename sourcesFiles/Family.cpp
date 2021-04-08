@@ -3,7 +3,6 @@
 //
 
 #include "../headersFiles/Family.h"
-#include "../headersFiles/main.h"
 
 std::vector<Member> generateTestFamily(int amount){
     std::vector<Member> toReturnFam;

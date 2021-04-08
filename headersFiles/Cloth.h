@@ -5,6 +5,7 @@
 #ifndef OS2021PROJECT_CLOTH_H
 #define OS2021PROJECT_CLOTH_H
 #include <string>
+#include <ctime>
 
 class Cloth {
 public:
