@@ -16,7 +16,7 @@ public:
 
     Cloth(std::string name, int ownerId);
 
-    Cloth(int ownerId);
+    explicit Cloth(int ownerId);
     void updateUseDate();
 
 };

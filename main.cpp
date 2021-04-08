@@ -1,17 +1,11 @@
-#include <map>
-#include <iostream>
 #include <cassert>
-#include <vector>
 #include "headersFiles/main.h"
-#include <pthread.h>
 #include "headersFiles/Family.h"
 #include "headersFiles/WardRobe.h"
-#include "headersFiles/Member.h"
 #include <unistd.h>
+
 // uncomment to disable assert()
 //#define NDEBUG
-
-
 
 /**
  * This project has the following proprieties
@@ -23,10 +17,7 @@
  * @return
  */
 
-
-int main(int argc, char **argv){
-
-
+int main(){
 
     //create a family test
     Family testFamily(20);

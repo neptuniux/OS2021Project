@@ -16,7 +16,7 @@ public:
     std::vector<Member> family;
 
     Family();
-    Family(int amount);
+    explicit Family(int amount);
     void goShopping(int numberItems);
     void goShopping();
     Member getRandMember();

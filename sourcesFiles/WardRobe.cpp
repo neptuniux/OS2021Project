@@ -11,12 +11,12 @@
 
 //this struct is used to sort the bags with the smallest first
 struct {
-    bool operator()(Member a, Member b) const { return a.getBag().size() < b.getBag().size(); }
+    bool operator()(const Member& a, const Member& b) const { return a.getBag().size() < b.getBag().size(); }
 } smallestBagSize;
 
 //this struct is used to sort the cloth of the wardrobe with the newest first
 struct {
-    bool operator()(Cloth a, Cloth b) const { return b.lastUsed < a.lastUsed; }
+    bool operator()(const Cloth& a, const Cloth& b) const { return b.lastUsed < a.lastUsed; }
 } newestFirst;
 
 //this mutex is used to lock the access to the wardrobe
@@ -66,7 +66,8 @@ void *putBagIntoWardrobe(void *threadarg) {
 
 
     for (int i = 0; i < bagSize; ++i) {
-        printf("the member id: %d is putting the cloth id %d into the wardrobe \n",threadData->member->getId(),currentBag.at(i).id);
+        printf("the member id: %d is putting the cloth id %d into the wardrobe \n",threadData->member->getId(),currentBag.at(
+                static_cast<unsigned int>(i)).id);
 
         threadData->currentWardrobe->addClothToWardrobe(currentBag[i]);
     }
@@ -77,7 +78,7 @@ void *putBagIntoWardrobe(void *threadarg) {
     //this methode is called at the end in case of error, one could use it to roll back.
     threadData->member->cleanbag();
     pthread_exit(nullptr);
-    return 0;
+    return nullptr;
 }
 
 
@@ -126,7 +127,7 @@ Cloth WardRobe::popCloth(int clothid){
         }
         i++;
     }
-    return NULL;
+    return static_cast<Cloth>(NULL);
 }
 
 

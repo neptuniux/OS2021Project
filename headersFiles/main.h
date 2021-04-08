@@ -3,7 +3,7 @@
 //
 
 #include <string>
-#include <time.h>
+#include <ctime>
 #include <vector>
 
 #ifndef OS2021PROJECT_MAIN_H

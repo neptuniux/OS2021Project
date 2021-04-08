@@ -12,7 +12,7 @@ std::vector<Member> generateTestFamily(int amount){
         toReturnFam.push_back(newMember);
     }
     return toReturnFam;
-};
+}
 
 //constructor if the amount of member is not defined
 Family::Family(): family(generateTestFamily(100)),id(rand()) {}
