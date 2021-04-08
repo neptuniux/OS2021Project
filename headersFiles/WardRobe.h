@@ -22,21 +22,30 @@ class WardRobe {
     int id;
     std::vector<Cloth> wardrobe;
 
-    public:
+public:
     WardRobe();
+
     int addFamBagsToWardrobe(Family family);
+
     void cleanWardrobe(int toClean);
+
     void cleanWardrobe();
+
     [[nodiscard]] int getId() const;
+
     [[nodiscard]] const std::vector<Cloth> &getWardrobe() const;
-    int addClothToWardrobe(const Cloth& cloth);
-    int useRandomCloth(const Member& member);
+
+    int addClothToWardrobe(const Cloth &cloth);
+
+    int useRandomCloth(const Member &member);
+
     int useRandomCloth();
+
     Cloth popCloth(int clothid);
 
 };
 
-struct thread_data{
+struct thread_data {
     int thread_id;
     Member *member;
     WardRobe *currentWardrobe;

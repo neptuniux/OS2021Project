@@ -4,6 +4,7 @@
 
 #ifndef OS2021PROJECT_FAMILY_H
 #define OS2021PROJECT_FAMILY_H
+
 #include "main.h"
 #include "Member.h"
 //#include <array>
@@ -16,10 +17,15 @@ public:
     std::vector<Member> family;
 
     Family();
+
     explicit Family(int amount);
+
     void goShopping(int numberItems);
+
     void goShopping();
+
     Member getRandMember();
 
 };
+
 #endif //OS2021PROJECT_FAMILY_H

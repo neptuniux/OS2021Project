@@ -4,6 +4,8 @@
 #include "headersFiles/WardRobe.h"
 
 
+using namespace std;
+
 // uncomment to disable assert()
 //#define NDEBUG
 
@@ -17,13 +19,15 @@
  * @return
  */
 
-int main(){
+int main() {
 
     //create a family test
     Family testFamily(20);
-    assert((testFamily.family.size()==20) && "the constructor parametrised family is returning the correct amount of member");
+    assert((testFamily.family.size() == 20) &&
+           "the constructor parametrised family is returning the correct amount of member");
     Family testFamily2;
-    assert((testFamily2.family.size()==100) && "the constructor unparametrised family is returning the correct amount of member (100)");
+    assert((testFamily2.family.size() == 100) &&
+           "the constructor unparametrised family is returning the correct amount of member (100)");
 
     //create a wardrobe test
     WardRobe objWardrobe;

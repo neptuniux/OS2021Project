@@ -10,5 +10,4 @@
 std::string printstring(int n);
 
 
-
 #endif //OS2021PROJECT_RANDOMSTRING_H

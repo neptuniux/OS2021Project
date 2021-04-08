@@ -5,9 +5,10 @@
 #include "../headersFiles/Member.h"
 #include "../headersFiles/randomString.h"
 
-Member::Member(std::string firstname, std::string lastname) : firstname(std::move(firstname)), lastname(std::move(lastname)), id(rand()),bag() {}
+Member::Member(std::string firstname, std::string lastname) : firstname(std::move(firstname)),
+                                                              lastname(std::move(lastname)), id(rand()), bag() {}
 
-Member::Member(): firstname(printstring(5)), lastname(printstring(5)), id(rand()),bag() {}
+Member::Member() : firstname(printstring(5)), lastname(printstring(5)), id(rand()), bag() {}
 
 int Member::getId() const {
     return id;
@@ -25,11 +26,11 @@ const std::vector<Cloth> &Member::getBag() const {
     return bag;
 }
 
-void Member::addClohToBag(const Cloth& cloth){
+void Member::addClohToBag(const Cloth &cloth) {
     Member::bag.push_back(cloth);
 }
 
-void  Member::cleanbag() {
+void Member::cleanbag() {
     bag.clear();
 }
 

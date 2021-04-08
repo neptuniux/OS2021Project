@@ -17,12 +17,19 @@ class Member {
     std::vector<Cloth> bag;
 public:
     Member(std::string firstname, std::string lastname);
+
     Member();
-    void addClohToBag(const Cloth& cloth);
+
+    void addClohToBag(const Cloth &cloth);
+
     [[nodiscard]] int getId() const;
+
     [[nodiscard]] const std::string &getFirstname() const;
+
     [[nodiscard]] const std::string &getLastname() const;
+
     [[nodiscard]] const std::vector<Cloth> &getBag() const;
+
     void cleanbag();
 
 };
