@@ -3,7 +3,6 @@
 //
 #include <map>
 #include <pthread.h>
-#include <pthread.h>
 #include <algorithm>
 #include <semaphore.h>
 #include <iostream>

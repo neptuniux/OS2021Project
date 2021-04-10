@@ -2,6 +2,8 @@
 #include "headersFiles/main.h"
 #include "headersFiles/Family.h"
 #include "headersFiles/WardRobe.h"
+#include <QApplication>
+#include "gui/mainwindows.h"
 
 
 using namespace std;
@@ -19,7 +21,12 @@ using namespace std;
  * @return
  */
 
-int main() {
+int main(int argc, char *argv[]) {
+    QApplication a(argc, argv);
+    mainWindows w;
+    w.show();
+    return a.exec();
+
 
     //create a family test
     Family testFamily(20);
