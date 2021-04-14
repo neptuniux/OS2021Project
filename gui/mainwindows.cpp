@@ -27,6 +27,7 @@ mainWindows::~mainWindows() {
     delete ui;
 }
 
+
 void mainWindows::createFamilyButton(){
     Family genfamily(ui->memberAmount->value());
     this->family = genfamily;
