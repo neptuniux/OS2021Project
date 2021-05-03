@@ -8,6 +8,7 @@
 #include <iostream>
 #include <vector>
 #include <ctime>
+#include <mutex>
 
 #include "main.h"
 #include "Family.h"
@@ -16,6 +17,7 @@
 #define OS2021PROJECT_WARDROBE_H
 
 void *putBagIntoWardrobe(void *threadarg);
+Cloth testPop(int clothid);
 
 class WardRobe {
     int id;
@@ -30,9 +32,9 @@ public:
 
     void cleanWardrobe();
 
-    [[nodiscard]] int getId() const;
+    int getId() const;
 
-    [[nodiscard]] const std::vector<Cloth> &getWardrobe() const;
+    std::vector<Cloth> &getWardrobe();
 
     int addClothToWardrobe(const Cloth &cloth);
 
@@ -42,13 +44,34 @@ public:
 
     Cloth popCloth(int clothid);
 
+private:
+    int numberCleanWardrobeThreads = 0;
+
+
+
 };
 
-struct thread_data {
+struct thread_data_addBags {
     int thread_id;
     Member *member;
     WardRobe *currentWardrobe;
 };
+
+struct thread_data_clean_wardrobe {
+    int thread_id;
+    int toClean;
+    WardRobe *currentWardrobe;
+};
+
+//this struct is used to sort the bags with the smallest first
+struct {
+    bool operator()(const Member &a, const Member &b) const { return a.getBag().size() < b.getBag().size(); }
+} smallestBagSize;
+
+//this struct is used to sort the cloth of the wardrobe with the newest first
+struct {
+    bool operator()(const Cloth &a, const Cloth &b) const { return b.lastUsed < a.lastUsed; }
+} newestFirst;
 
 
 #endif //OS2021PROJECT_WARDROBE_H

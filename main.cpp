@@ -36,6 +36,7 @@ int main(int argc, char *argv[]) {
     assert((testFamily2.family.size() == 100) &&
            "the constructor unparametrised family is returning the correct amount of member (100)");
 
+
     //create a wardrobe test
     WardRobe objWardrobe;
 
@@ -52,6 +53,8 @@ int main(int argc, char *argv[]) {
         objWardrobe.useRandomCloth();
         sleep(1);
     }
+
+
 
     //clean the wardrobe
     objWardrobe.cleanWardrobe();

@@ -4,19 +4,15 @@
 
 #include "../headersFiles/WardRobe.h"
 
+//these mutex is used to lock the access to the wardrobe
+std::mutex use_cloth_mutex;
 
-//this struct is used to sort the bags with the smallest first
-struct {
-    bool operator()(const Member &a, const Member &b) const { return a.getBag().size() < b.getBag().size(); }
-} smallestBagSize;
+sem_t mutexAddBags;
 
-//this struct is used to sort the cloth of the wardrobe with the newest first
-struct {
-    bool operator()(const Cloth &a, const Cloth &b) const { return b.lastUsed < a.lastUsed; }
-} newestFirst;
+sem_t mutexClean;
+pthread_t cleaning_operations[20];
+struct thread_data_clean_wardrobe cleaning_td[20];
 
-//this mutex is used to lock the access to the wardrobe
-sem_t mutex;
 
 WardRobe::WardRobe() : wardrobe(), id(rand() % 1000) {}
 
@@ -24,40 +20,40 @@ WardRobe::WardRobe() : wardrobe(), id(rand() % 1000) {}
 int WardRobe::addFamBagsToWardrobe(Family family) {
     //threads data
 
-    int numberOfThreads = family.family.size();
+    int numberOfThreads = (int) family.family.size();
     pthread_t operations[numberOfThreads];
-    struct thread_data td[numberOfThreads];
+    struct thread_data_addBags td[numberOfThreads];
     int rc;
 
     //this sort locally the family with the smallest bag first
     std::sort(family.family.begin(), family.family.end(), smallestBagSize);
 
-    sem_init(&mutex, 0, 1);
+    sem_init(&mutexAddBags, 0, 1);
 
     for (int i = 0; i < numberOfThreads; i++) {
         td[i].thread_id = i;
         td[i].member = &family.family[i];
         td[i].currentWardrobe = this;
         printf("Member with id %d open the wardrobe: step %d / %d\n", td[i].member->getId(), i + 1, numberOfThreads);
-        rc = pthread_create(&operations[i], nullptr, putBagIntoWardrobe, (void *) &td[i]);
-        pthread_join(operations[i], nullptr);
+        rc = pthread_create(&operations[i], NULL, putBagIntoWardrobe, (void *) &td[i]);
+        pthread_join(operations[i], NULL);
         if (rc) {
             printf("Error:unable to create thread, %d", rc);
             exit(-1);
         }
     }
-    sem_destroy(&mutex);
+    sem_destroy(&mutexAddBags);
     return 0;
 }
 
 //This method is call by every member to put the cloths into the wardrobe
 void *putBagIntoWardrobe(void *threadarg) {
     //Lock the access to the wardrobe
-    sem_wait(&mutex);
+    sem_wait(&mutexAddBags);
 
-    struct thread_data *threadData;
-    threadData = (struct thread_data *) threadarg;
-    int bagSize = threadData->member->getBag().size();
+    struct thread_data_addBags *threadData;
+    threadData = (struct thread_data_addBags *) threadarg;
+    int bagSize = (int) threadData->member->getBag().size();
     std::vector<Cloth> currentBag = threadData->member->getBag();
 
 
@@ -71,11 +67,11 @@ void *putBagIntoWardrobe(void *threadarg) {
     printf("the member id: %d close the wardrobe \n", threadData->member->getId());
 
     //release the access to the wardrobe
-    sem_post(&mutex);
+    sem_post(&mutexAddBags);
     //this methode is called at the end in case of error, one could use it to roll back.
     threadData->member->cleanbag();
-    pthread_exit(nullptr);
-    return nullptr;
+    //pthread_exit(nullptr);
+
 }
 
 
@@ -85,22 +81,64 @@ int WardRobe::addClothToWardrobe(const Cloth &cloth) {
 }
 
 //the parameter is the amount of cloth to clean
-void WardRobe::cleanWardrobe(int toClean) {
-    std::sort(wardrobe.begin(), wardrobe.end(), newestFirst);
-    if (toClean > wardrobe.size()) {
-        toClean = wardrobe.size();
+void *cleanWardrobeThreaded(void *threadArgs) {
+    sem_wait(&mutexClean);
+    struct thread_data_clean_wardrobe *threadData;
+    threadData = (struct thread_data_clean_wardrobe *) (threadArgs);
+    int toClean = reinterpret_cast<int>(threadData->toClean);
+
+
+    std::sort(threadData->currentWardrobe->getWardrobe().begin(), threadData->currentWardrobe->getWardrobe().end(),
+              newestFirst);
+    if (toClean > threadData->currentWardrobe->getWardrobe().size()) {
+        toClean = threadData->currentWardrobe->getWardrobe().size();
     }
+
     for (int i = 0; i < toClean; ++i) {
-        tm *gmtm = gmtime(&wardrobe.back().lastUsed);
+        tm *gmtm = gmtime(&threadData->currentWardrobe->getWardrobe().back().lastUsed);
         char *dt = asctime(gmtm);
-        printf("The wardrobe was cleaned of the cloth with the id %d because it was %s old \n", wardrobe.back().id, dt);
-        wardrobe.pop_back();
+
+        threadData->currentWardrobe->getWardrobe().pop_back();
+        printf("The wardrobe was cleaned of the cloth with the id %d because it was %s old \n",
+               threadData->currentWardrobe->getWardrobe().back().id, dt);
     }
+    sem_post(&mutexClean);
+    pthread_exit(nullptr);
 }
 
-//if no parameter is provided the amount cleaned is 50% of the current used wardrobe
+
+void WardRobe::cleanWardrobe(int toClean) {
+    //threads data
+    if (numberCleanWardrobeThreads == 0) {
+        sem_init(&mutexClean, 0, 1);
+    }
+
+    numberCleanWardrobeThreads++;
+    int rc;
+
+    cleaning_td[numberCleanWardrobeThreads].thread_id = numberCleanWardrobeThreads;
+    cleaning_td[numberCleanWardrobeThreads].toClean = toClean;
+    cleaning_td[numberCleanWardrobeThreads].currentWardrobe = this;
+    printf("Cleaning process started: amount %d,  step %d / %d\n", cleaning_td[numberCleanWardrobeThreads].toClean,
+           numberCleanWardrobeThreads + 1, numberCleanWardrobeThreads);
+    rc = pthread_create(&cleaning_operations[numberCleanWardrobeThreads], NULL, cleanWardrobeThreaded,
+                        (void *) &cleaning_td[numberCleanWardrobeThreads]);
+    pthread_join(cleaning_operations[numberCleanWardrobeThreads], nullptr);
+    if (rc) {
+        printf("Error:unable to create thread, %d", rc);
+        exit(-1);
+    }
+
+
+    if (numberCleanWardrobeThreads == 0) {
+        sem_destroy(&mutexClean);
+    }
+    numberCleanWardrobeThreads--;
+
+}
+
 void WardRobe::cleanWardrobe() {
-    cleanWardrobe(static_cast<int>(wardrobe.size() / 2));
+    cleanWardrobe(this->wardrobe.size() / 2);
 }
 
 
@@ -108,14 +146,15 @@ int WardRobe::getId() const {
     return id;
 }
 
-const std::vector<Cloth> &WardRobe::getWardrobe() const {
+std::vector<Cloth> &WardRobe::getWardrobe() {
     return wardrobe;
 }
 
 //this method could be used in the future
 Cloth WardRobe::popCloth(int clothid) {
+    std::lock_guard<std::mutex> guard(use_cloth_mutex);
     int i = 0;
-    for (const auto &item : wardrobe) {
+    for (auto &item : wardrobe) {
         if (item.ownerID == clothid) {
             wardrobe[i].updateUseDate();
             Cloth toreturn = wardrobe[i];
@@ -130,6 +169,7 @@ Cloth WardRobe::popCloth(int clothid) {
 
 //this method use a random cloth of a specified member and return the id of the cloth used
 int WardRobe::useRandomCloth(const Member &member) {
+    std::lock_guard<std::mutex> guard(use_cloth_mutex);
     std::vector<Cloth *> clothOf;
     for (Cloth item : wardrobe) {
         if (item.ownerID == member.getId()) {
@@ -143,9 +183,12 @@ int WardRobe::useRandomCloth(const Member &member) {
 
 //this method use a random cloth and return the id of the cloth used
 int WardRobe::useRandomCloth() {
+    std::lock_guard<std::mutex> guard(use_cloth_mutex);
     Cloth *toreturn = &wardrobe.at(rand() % wardrobe.size());
     toreturn->updateUseDate();
     return toreturn->id;
 }
+
+
 
 
