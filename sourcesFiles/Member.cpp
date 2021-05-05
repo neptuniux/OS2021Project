@@ -26,8 +26,9 @@ const std::vector<Cloth> &Member::getBag() const {
     return bag;
 }
 
-void Member::addClohToBag(const Cloth &cloth) {
+int Member::addClohToBag(const Cloth &cloth) {
     Member::bag.push_back(cloth);
+    return 0;
 }
 
 void Member::cleanbag() {

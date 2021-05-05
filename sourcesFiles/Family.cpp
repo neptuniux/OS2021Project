@@ -32,7 +32,7 @@ void Family::goShopping() {
     goShopping(100);
 }
 
-Member Family::getRandMember() {
+Member &Family::getRandMember() {
     return family.at(rand() % family.size());
 
 }

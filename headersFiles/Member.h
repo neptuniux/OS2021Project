@@ -20,7 +20,7 @@ public:
 
     Member();
 
-    void addClohToBag(const Cloth &cloth);
+    int addClohToBag(const Cloth &cloth);
 
     [[nodiscard]] int getId() const;
 

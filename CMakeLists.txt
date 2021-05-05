@@ -30,7 +30,7 @@ add_executable(OS2021Project
         headersFiles/Member.h
         gui/mainwindows.cpp
         gui/mainwindows.h
-        gui/mainWindows.ui)
+        gui/mainWindows.ui UnitTests.cpp UnitTests.h)
 
 target_link_libraries(OS2021Project -lrt -lpthread -lm)
 target_link_libraries(${PROJECT_NAME} Qt5::Core)

@@ -6,9 +6,7 @@
 
 //these mutex is used to lock the access to the wardrobe
 std::mutex use_cloth_mutex;
-
 sem_t mutexAddBags;
-
 sem_t mutexClean;
 pthread_t cleaning_operations[20];
 struct thread_data_clean_wardrobe cleaning_td[20];
@@ -76,8 +74,21 @@ void *putBagIntoWardrobe(void *threadarg) {
 
 
 int WardRobe::addClothToWardrobe(const Cloth &cloth) {
-    wardrobe.push_back(cloth);
-    return 0;
+    std::lock_guard<std::mutex> guard(use_cloth_mutex);
+    bool flag = false;
+    for (auto &item : wardrobe) {
+        if (cloth.id == item.id && cloth.name == item.name && cloth.ownerID == item.ownerID) {
+            flag = true;
+        }
+    }
+
+    if (!flag){
+        wardrobe.push_back(cloth);
+        return 0;
+    } else{
+        printf("The cloth is already in the closet");
+        return -1;
+    }
 }
 
 //the parameter is the amount of cloth to clean
@@ -150,7 +161,7 @@ std::vector<Cloth> &WardRobe::getWardrobe() {
     return wardrobe;
 }
 
-//this method could be used in the future
+
 Cloth WardRobe::popCloth(int clothid) {
     std::lock_guard<std::mutex> guard(use_cloth_mutex);
     int i = 0;
@@ -159,10 +170,31 @@ Cloth WardRobe::popCloth(int clothid) {
             wardrobe[i].updateUseDate();
             Cloth toreturn = wardrobe[i];
             wardrobe.erase(wardrobe.begin() + i);
+            printf("Poped the cloth id: %d \n", toreturn.id);
             return toreturn;
         }
         i++;
     }
+    printf("WARNING: The cloth %d could not be found \n",clothid);
+    return static_cast<Cloth>(NULL);
+}
+
+Cloth WardRobe::popClothName(std::string clothname) {
+    std::lock_guard<std::mutex> guard(use_cloth_mutex);
+    int i = 0;
+    for (auto &item : wardrobe) {
+        if (item.name == clothname) {
+            wardrobe[i].updateUseDate();
+            Cloth toreturn = wardrobe[i];
+            wardrobe.erase(wardrobe.begin() + i);
+            printf("Poped the cloth id: %d \n", toreturn.id);
+            return toreturn;
+        }
+        i++;
+    }
+    printf("WARNING: The cloth ");
+    printf(clothname.c_str());
+    printf(" could not be found");
     return static_cast<Cloth>(NULL);
 }
 
@@ -188,6 +220,18 @@ int WardRobe::useRandomCloth() {
     toreturn->updateUseDate();
     return toreturn->id;
 }
+
+int WardRobe::getAmount(std::string name) {
+    std::lock_guard<std::mutex> guard(use_cloth_mutex);
+    int toreturn=0;
+    for (Cloth item : wardrobe) {
+        if (item.name == name) {
+            toreturn++;
+        }
+    }
+    return toreturn;
+}
+
 
 
 

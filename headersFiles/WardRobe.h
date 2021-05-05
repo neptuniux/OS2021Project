@@ -17,7 +17,6 @@
 #define OS2021PROJECT_WARDROBE_H
 
 void *putBagIntoWardrobe(void *threadarg);
-Cloth testPop(int clothid);
 
 class WardRobe {
     int id;
@@ -43,6 +42,9 @@ public:
     int useRandomCloth();
 
     Cloth popCloth(int clothid);
+    Cloth popClothName(std::string clothname);
+
+    int getAmount(std::string name);
 
 private:
     int numberCleanWardrobeThreads = 0;

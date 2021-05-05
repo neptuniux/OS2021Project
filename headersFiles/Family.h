@@ -24,7 +24,7 @@ public:
 
     void goShopping();
 
-    Member getRandMember();
+    Member &getRandMember();
 
 };
 
