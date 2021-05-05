@@ -25,7 +25,7 @@ using namespace std;
  */
 
 int main(int argc, char *argv[]) {
-
+    fullTest();
     QApplication a(argc, argv);
     mainWindows w;
     w.show();
