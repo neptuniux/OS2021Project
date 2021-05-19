@@ -1,8 +1,6 @@
 
 #include "headersFiles/main.h"
-#include "headersFiles/Family.h"
-#include "headersFiles/WardRobe.h"
-#include "UnitTests.h"
+#include "unitTests/UnitTests.h"
 
 #include <QApplication>
 #include "gui/mainwindows.h"
@@ -10,9 +8,6 @@
 
 
 using namespace std;
-
-// uncomment to disable assert()
-//#define NDEBUG
 
 /**
  * This project has the following proprieties
@@ -26,6 +21,7 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
     fullTest();
+
     QApplication a(argc, argv);
     mainWindows w;
     w.show();
