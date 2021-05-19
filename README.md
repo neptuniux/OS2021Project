@@ -2,6 +2,9 @@
 
 This project is a part of the UniFR's Operating System course. The goal is to develop a C or C++ program to apply the notions seen in class.
 
+## Support
+The project is currently only supported by Linux because of the Pthread and the QT GUI that doesn't support the Pthreads. A possible solution could be found here: [Qthreads in QT](https://doc.qt.io/qt-5/qthread.html#details)
+
 ## Choice of implementation
 The project let us choose between several approach in the implementation. They are described here-down:
 * Team Youth (smallest bag first) is the method to choose which family member can store the content of his bag first. Here the choice was motivated by he fact that it seems the optimal way to do it.
