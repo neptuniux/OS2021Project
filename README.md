@@ -5,17 +5,27 @@ This project is a part of the UniFR's Operating System course. The goal is to de
 ## Support
 The project is currently only supported by Linux because of the Pthread and the QT GUI that doesn't support the Pthreads. A possible solution could be found here: [Qthreads in QT](https://doc.qt.io/qt-5/qthread.html#details)
 
-## Choice of implementation
-The project let us choose between several approach in the implementation. They are described here-down:
-* Team Youth (smallest bag first) is the method to choose which family member can store the content of his bag first. Here the choice was motivated by he fact that it seems the optimal way to do it.
-* Team The unused should go (least used should go) was the choice made for the clean process. Here this method keep the most used cloth of the wardrobe which seems to be optimal in term of performances.
-
+## Installation 
+To install this software follow these steps:
+Clone the is repository and open a terminal in the extracted directory.
+```bash
+mkdir build
+cd build
+cmake ..
+cmake --build .
+```
+To execute he program simply type and pray.
+```bash
+./OS2021Project
+```
 
 ## Usage
 To test the software one can use the all in one method containing all the units test made.
 ```c++
 fullTest();
 ```
+This method contains the test of scenario1 and scenario23.
+
 To run the software's GUI (made with QT) one can run:
 ```c++
 QApplication a(argc, argv);
