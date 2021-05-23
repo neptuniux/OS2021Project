@@ -36,7 +36,7 @@ int WardRobe::addFamBagsToWardrobe(Family family) {
         rc = pthread_create(&operations[i], NULL, putBagIntoWardrobe, (void *) &td[i]);
         pthread_join(operations[i], NULL);
         if (rc) {
-            printf("Error:unable to create thread, %d", rc);
+            printf("Error:unable to create thread, %d \n", rc);
             exit(-1);
         }
     }
@@ -86,7 +86,7 @@ int WardRobe::addClothToWardrobe(const Cloth &cloth) {
         wardrobe.push_back(cloth);
         return 0;
     } else{
-        printf("The cloth is already in the closet");
+        printf("The cloth is already in the closet \n");
         return -1;
     }
 }
@@ -136,7 +136,7 @@ void WardRobe::cleanWardrobe(int toClean) {
                         (void *) &cleaning_td[numberCleanWardrobeThreads]);
     pthread_join(cleaning_operations[numberCleanWardrobeThreads], nullptr);
     if (rc) {
-        printf("Error:unable to create thread, %d", rc);
+        printf("Error:unable to create thread, %d \n", rc);
         exit(-1);
     }
 
@@ -194,7 +194,7 @@ Cloth WardRobe::popClothName(std::string clothname) {
     }
     printf("WARNING: The cloth ");
     printf(clothname.c_str());
-    printf(" could not be found");
+    printf(" could not be found \n");
     return static_cast<Cloth>(NULL);
 }
 

@@ -13,7 +13,8 @@
 
 bool testWardrobe();
 bool scenario1();
-bool scenario23();
+bool scenario2();
+bool scenario3();
 bool testFamily();
 bool fullTest();
 class UnitTests {
